@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react';
 import './App.css';
 import { ChildArea } from './ChildArea';
 import { InlineStyle } from './components/InlineStyle';
+import { CssModule } from './components/CssModule';
 
 function App() {
   const [text, setText] = useState('');
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <InlineStyle/>
+      <InlineStyle />
+      <CssModule />
       <input value={text} onChange={onChangeText} />
       <br />
       <br />
