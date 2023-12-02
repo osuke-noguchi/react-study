@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import './App.css';
 import { ChildArea } from './ChildArea';
-import { InlineStyle } from './InlineStyle';
+import { InlineStyle } from './components/InlineStyle';
 
 function App() {
   const [text, setText] = useState('');
