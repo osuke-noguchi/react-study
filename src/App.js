@@ -5,6 +5,7 @@ import { InlineStyle } from './components/InlineStyle';
 import { CssModule } from './components/CssModule';
 import { StyledJsx } from './components/StyledJsx';
 import { StyledComponents } from './components/StyledConponents';
+import { Emotion } from './components/Emotion';
 
 function App() {
   const [text, setText] = useState('');
@@ -22,6 +23,7 @@ function App() {
       <CssModule />
       <StyledJsx />
       <StyledComponents />
+      <Emotion />
       <input value={text} onChange={onChangeText} />
       <br />
       <br />
