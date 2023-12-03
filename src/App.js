@@ -3,6 +3,7 @@ import './App.css';
 import { ChildArea } from './ChildArea';
 import { InlineStyle } from './components/InlineStyle';
 import { CssModule } from './components/CssModule';
+import { StyledJsx } from './components/StyledJsx';
 
 function App() {
   const [text, setText] = useState('');
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <InlineStyle />
       <CssModule />
+      <StyledJsx />
       <input value={text} onChange={onChangeText} />
       <br />
       <br />
