@@ -50,17 +50,17 @@ function App() {
         </Route>
         <Route
           path="/page1"
-          render={() => (
+          render={({ match: { url } }) => (
             <Switch>
-            <Route exact path="/page1">
-              <Page1 />
-            </Route>
-            <Route exact path="/page1/detailA">
-              <Page1DetailA />
-            </Route>
-            <Route exact path="/page1/detailB">
-              <Page1DetailB />
-            </Route>
+              <Route exact path={url}>
+                <Page1 />
+              </Route>
+              <Route exact path={`${url}/detailA`}>
+                <Page1DetailA />
+              </Route>
+              <Route exact path={`${url}/detailB`}>
+                <Page1DetailB />
+              </Route>
             </Switch>
           )}
         />
