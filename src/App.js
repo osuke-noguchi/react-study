@@ -8,7 +8,6 @@ import { StyledJsx } from './components/StyledJsx';
 import { StyledComponents } from './components/StyledComponents';
 import { Emotion } from './components/Emotion';
 import { Home } from './Home';
-import { Page2 } from './Page2';
 import { Router } from './router/Router.jsx';
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
         <Link to="/page2">Page2</Link>
         <Router />
         <Home />
-        <Page2 />
         <InlineStyle />
         <CssModule />
         <StyledJsx />
